@@ -23,4 +23,42 @@ body, html {
   border-radius: 0.8rem;
   text-align: center;
   box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2 {
+  font-size: 1.7rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.quote-box h2::after {
+  content: "";
+  width: 4rem;
+  height: 0.1rem;
+  border-radius: 0.1rem;
+  background: rgb(23, 124, 229);
+  position: absolute;
+  bottom: -0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-box blockquote {
+  font-size: 2rem;
+  min-height: 7rem;
+}
+.quote-box blockquote::before, .quote-box blockquote::after {
+  content: '"';
+}
+.quote-box span {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.quote-box span::before {
+  content: "";
+  width: 2rem;
+  height: 0.1rem;
+  position: absolute;
+  background: rgb(23, 124, 229);
+  top: 50%;
+  left: -3.5rem;
 }/*# sourceMappingURL=style.css.map */
